@@ -1,0 +1,44 @@
+package com.se.project.firstspring.Model;
+
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Student {
+
+    private long id;
+    private String name;
+    private String lname;
+
+
+@Id
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLname() {
+        return lname;
+    }
+
+    public void setLname(String lname) {
+        this.lname = lname;
+    }
+
+
+
+
+}
